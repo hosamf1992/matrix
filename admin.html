@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="admin-container" onload="renderTable(),updateModalLoginTime()">
+    <div class="main-container">
+        <h1>Filter By:</h1>
+      
+            <select onchange="getUsersToShow(this.value)">
+                <option>Last login</option>
+                <option>Name</option>
+
+
+            </select>
+       
+        <table >
+            <tbody class="table"></tbody>
+        </table>
+    </div>
+
+
+    <script src="js/service.js"> </script>
+    <script src="js/controller.js"> </script>
+</body>
+
+</html>
